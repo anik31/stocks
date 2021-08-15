@@ -1,4 +1,4 @@
-# Is your birthday a pallindrome?
+# Check profit/loss on stocks
 
 A VanillaJS app to calculate profit/loss based on stocks value.
 
