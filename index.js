@@ -8,7 +8,18 @@ function clickHandler(){
     var initial = Number(priceInitial.value);
     var current = Number(priceCurrent.value);
     var quantity = Number(stocksNum.value);
-    calculateProfitLoss(initial,current,quantity);
+    if (initial == ""){
+        output.innerText = `Please enter initial price of stock.`;
+        output.style.color = "red";
+    }else if(quantity == ""){
+        output.innerText = `Please enter quantity of stocks.`;
+        output.style.color = "red";
+    }else if(current == ""){
+        output.innerText = `Please enter current price of stock.`;
+        output.style.color = "red";
+    }else{
+        calculateProfitLoss(initial,current,quantity);
+    }
 }
 
 function calculateProfitLoss(initial,current,quantity){
