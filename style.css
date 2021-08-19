@@ -11,15 +11,20 @@ body{
     text-align: center;
     background-color: #53575f;
     color: var(--off-white);
-    background-size: 1380px 650px;
+    background-size: 100%;
+    background-position: center center;
 }
 input{
     display: block;
     margin: 1rem auto;
-    font-size: large;
+    font-size: 15px;
+    text-align: center;
+    padding: 0.5rem;
+    border: 1px solid var(--off-white);
+    border-radius: 1rem;
 }
 h1{
-    margin: 3rem auto;
+    margin: 1.5rem auto;
 }
 label{
     margin: 1rem auto;
@@ -31,14 +36,29 @@ button{
     border-radius: 0.5rem;
     padding: 1rem 2rem;
     font-weight: bold;
-    max-width: 100px;
+    max-width: 200px;
     cursor: pointer;
 }
 #output{
-    font-size: larger;
+    font-size: 23px;
     font-weight: bold;
     color: var(--off-white);
 }
-img{
-    width: 200px;
+ul{
+    padding-inline-start: 0;
+}
+.fab,.fas{
+    font-size: 30px;
+    color: var(--off-white);
+    margin: 0 0.5rem;
+}
+footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.list-item-inline{
+    display: inline;
+    padding: 0rem 0.5rem;
 }

@@ -26,7 +26,7 @@ function calculateProfitLoss(initial,current,quantity){
     if (initial > current){
         var loss = (initial - current)*quantity;
         var lossPercent = (loss/initial)*100;
-        output.innerText = `Sorry to say that you have faced a loss of ${loss} and the loss percent is ${lossPercent}.`;
+        output.innerText = `Sorry to say that you have faced a loss of ${loss} and the loss percent is ${lossPercent}%.`;
         output.style.color = "red";
         document.body.style.backgroundImage = 'url("https://media.giphy.com/media/3osxYzIQRqN4DOEddC/source.gif")';
     }else if (current > initial) {
@@ -36,7 +36,9 @@ function calculateProfitLoss(initial,current,quantity){
         output.style.color = "green";
         document.body.style.backgroundImage = "url('https://media.giphy.com/media/aTg2U8r9YCgfOlGh45/source.gif')";
     }else {
+        document.body.style.backgroundImage = "";
         output.innerText = `Have some patience DUDE!!`;
+        output.style.color = "white";
     }
 }
 
